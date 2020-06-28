@@ -1,0 +1,21 @@
+.form
+{
+    .form__content
+    {
+        .form__input
+        {
+            display: block;
+            width: 24.5rem;
+            background: transparent;
+            font-family: Poppins-Medium;
+            font-size: 18px;
+            color: #333333;
+            line-height: 1.2;
+            padding: 0 0.4rem;
+            height: 3.6rem;
+            border-color: transparent;
+            outline: none;
+            transition:0.2s ease all; 
+        }        
+    }
+}    

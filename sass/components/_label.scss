@@ -1,0 +1,20 @@
+.form
+{
+    .lblform
+    {
+        font-size: 13px;
+        color: #666666;
+        line-height: 1.5;
+        padding-left: 5px;
+    }    
+}
+
+.name__error, .email__error, .age__error
+{
+    display: none;
+    position: absolute;
+    top: 5.5rem;
+    font-size: 0.8rem;
+    color: red;
+    margin-bottom: 1.5rem;
+}

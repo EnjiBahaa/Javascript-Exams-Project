@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Exam Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="background__img"></div>
+        <div class="form__background">
+            <div class="form">
+                <div class="form__title">
+                    <div class="title__header">CREATE USER</div>
+                    <span class="title__span">*Please fill this form to enter your exam.</span>
+                </div>
+
+                <div class="form__content">
+                    <span class="lblform">Your Name</span>
+                    <input class="form__input form__name" type="text" name="name" placeholder="Enter your name" required>
+                    <div class="name__error">*Name can't be empty and use at least 3 characters.</div>
+                </div>
+
+ 
+                <div class="form__content">
+                    <span class="lblform">Your Email</span>
+                    <input class="form__input form__email" type="email" pattern="/(\w+)\@(\w+)\.[a-zA-Z]/g" name="email" placeholder="Enter your email" required>
+                    <div class="email__error">*Email can't be empty and must be a valid email.</div> 
+                </div>
+
+                <div class="form__content">
+                    <span class="lblform">Your Age</span>
+                    <input class="form__input form__age" type="number" name="age" placeholder="Enter your age" required>
+                    <div class="age__error">*Age can't be empty and must be between 18 and 22.</div> 
+                </div>
+   
+                <div class="form__content form__content--radio">
+                    <span class="lblform">Your Gender</span>
+                    <span class="radio__gender">                      
+                        <input class="radio__btn" type="radio" id="male" name="gender" value="Male" checked> 
+                        <label class="lblradiobtn" for="male">Male</label>
+                        <input class="radio__btn" type="radio" id="female" name="gender" value="Female"> 
+                        <label class="lblradiobtn" for="female">Female</label>
+                    </span>
+                </div> 
+                <!-- <button class="btn btn--form">enter
+                    <!-- <a class="btn btn--form" href="#">ENTER</a> 
+                </button> -->
+                
+                <div class="btn--form ">
+                   <div class="btn btn--rounded">
+                        <span class="btn__text">Enter</span>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/form.js"></script>
+
+</html>

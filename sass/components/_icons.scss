@@ -1,0 +1,21 @@
+.fas
+{
+    &.fa-long-arrow-alt-right
+    {
+        color: #333333;
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+
+    &.fa-chevron-left
+    {
+        font-size: 0.7rem;
+        margin-right: 0.4rem;
+    }
+
+    &.fa-chevron-right
+    {
+        font-size: 0.7rem;
+        margin-left: 0.4rem;
+    }
+}

@@ -1,0 +1,82 @@
+.background
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .background__img
+    {
+        height: 45rem;
+        width: 100%;
+        opacity: 0.5;
+        position: relative;
+        background-color: lightgray;
+        z-index: 0;
+    }
+
+    .form__background
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        position: absolute;
+        top: 1.5rem;
+        .form
+        {
+            width: 25rem;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 42px 55px 45px 55px;
+            .form__title
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .title__header
+                {
+                    display: block;
+                    font-size: 2.5rem;
+                    color: #333333;
+                    line-height: 1.2;
+                    text-align: center;
+                    font-family: Poppins-Bold;
+                }
+                .title__span
+                {
+                    color: #777777;
+                    margin-bottom: 2rem;
+                }
+            }    
+            .form__content
+            {
+                width: 100%;
+                height: 5rem;
+                position: relative;
+                border-bottom: 2px solid #d9d9d9;
+                margin-bottom: 1.6rem;
+                &--radio
+                {
+                    border-bottom: none;
+                    display: flex;
+                    flex-direction: column;
+                    .radio__gender
+                    {
+                        margin-top: 0.1rem;
+                        padding: 1rem;
+                        .lblradiobtn
+                        {
+                            margin-right: 7rem;
+                        }
+                    }
+                }
+
+                .form__input:focus
+                {
+                    border-bottom: 2px solid darkgray;
+                    transition: transform 0.3s ease;
+                }
+            }
+        }
+    }
+}

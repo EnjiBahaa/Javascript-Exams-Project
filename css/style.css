@@ -1,0 +1,288 @@
+body {
+  margin: 0; }
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .background .background__img {
+    height: 45rem;
+    width: 100%;
+    opacity: 0.5;
+    position: relative;
+    background-color: lightgray;
+    z-index: 0; }
+  .background .form__background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    position: absolute;
+    top: 1.5rem; }
+    .background .form__background .form {
+      width: 25rem;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 42px 55px 45px 55px; }
+      .background .form__background .form .form__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .background .form__background .form .form__title .title__header {
+          display: block;
+          font-size: 2.5rem;
+          color: #333333;
+          line-height: 1.2;
+          text-align: center;
+          font-family: Poppins-Bold; }
+        .background .form__background .form .form__title .title__span {
+          color: #777777;
+          margin-bottom: 2rem; }
+      .background .form__background .form .form__content {
+        width: 100%;
+        height: 5rem;
+        position: relative;
+        border-bottom: 2px solid #d9d9d9;
+        margin-bottom: 1.6rem; }
+        .background .form__background .form .form__content--radio {
+          border-bottom: none;
+          display: flex;
+          flex-direction: column; }
+          .background .form__background .form .form__content--radio .radio__gender {
+            margin-top: 0.1rem;
+            padding: 1rem; }
+            .background .form__background .form .form__content--radio .radio__gender .lblradiobtn {
+              margin-right: 7rem; }
+        .background .form__background .form .form__content .form__input:focus {
+          border-bottom: 2px solid darkgray;
+          transition: transform 0.3s ease; }
+
+.btn--form {
+  line-height: 14px;
+  text-decoration: none; }
+  .btn--form .btn--rounded {
+    font-size: 1.2rem;
+    text-align: center;
+    border-width: 0.2rem;
+    border-style: solid;
+    border-radius: 1.5em;
+    text-decoration: none;
+    height: 1.5rem;
+    width: 12rem;
+    color: #3d4552;
+    background-color: #fff;
+    border-color: #ebedf2;
+    padding: 1rem 1rem;
+    margin-left: 4.5rem;
+    cursor: pointer; }
+
+.btn.btn--rounded {
+  transition: transform 100ms ease-in-out; }
+  .btn.btn--rounded:hover {
+    background-color: #FAFAFA;
+    box-shadow: 4px 8px 16px #dedede; }
+    .btn.btn--rounded:hover .btn__text {
+      transition: transform 0.1s ease-out;
+      transform: translateX(0); }
+    .btn.btn--rounded:hover .fa-long-arrow-alt-right {
+      transition: transform 0.8s ease-out;
+      transform: translateX(-15px);
+      opacity: 1; }
+
+.btn__text {
+  display: inline-block;
+  transform: translateX(9px);
+  padding: 0.3rem 0.5rem;
+  min-width: 9rem; }
+
+.form .form__content .form__input {
+  display: block;
+  width: 24.5rem;
+  background: transparent;
+  font-family: Poppins-Medium;
+  font-size: 18px;
+  color: #333333;
+  line-height: 1.2;
+  padding: 0 0.4rem;
+  height: 3.6rem;
+  border-color: transparent;
+  outline: none;
+  transition: 0.2s ease all; }
+
+.form .lblform {
+  font-size: 13px;
+  color: #666666;
+  line-height: 1.5;
+  padding-left: 5px; }
+
+.name__error, .email__error, .age__error {
+  display: none;
+  position: absolute;
+  top: 5.5rem;
+  font-size: 0.8rem;
+  color: red;
+  margin-bottom: 1.5rem; }
+
+.test {
+  display: flex; }
+  .test .questionsblock {
+    border: solid;
+    height: 35rem;
+    margin: 3rem;
+    box-shadow: 2px 10px 10px 10px #dedede;
+    border-color: transparent;
+    border-radius: 1rem;
+    padding: 3rem;
+    width: 65rem;
+    margin-left: 6rem; }
+    .test .questionsblock .question {
+      font-size: 1.5rem;
+      margin-bottom: 1rem; }
+    .test .questionsblock .answers .answer__inputGroup {
+      background-color: #fff;
+      display: block;
+      margin: 10px 0;
+      position: relative;
+      font-size: 1.1rem; }
+      .test .questionsblock .answers .answer__inputGroup label {
+        padding: 12px 65px;
+        width: 60%;
+        display: block;
+        text-align: left;
+        color: #3C454C;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+        transition: color 200ms ease-in;
+        overflow: hidden; }
+        .test .questionsblock .answers .answer__inputGroup label:before {
+          width: 10rem;
+          height: 10px;
+          border-radius: 50%;
+          content: '';
+          background-color: #5562eb;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%) scale3d(1, 1, 1);
+          transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+          opacity: 0;
+          z-index: -1; }
+        .test .questionsblock .answers .answer__inputGroup label:after {
+          width: 32px;
+          height: 32px;
+          content: '';
+          border: 2px solid #D1D7DC;
+          background-color: #fff;
+          background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+          background-repeat: no-repeat;
+          background-position: 2px 3px;
+          border-radius: 50%;
+          z-index: 2;
+          position: absolute;
+          right: 30px;
+          top: 50%;
+          transform: translateY(-50%);
+          cursor: pointer;
+          transition: all 200ms ease-in; }
+      .test .questionsblock .answers .answer__inputGroup input:checked ~ label {
+        color: #fff; }
+        .test .questionsblock .answers .answer__inputGroup input:checked ~ label:before {
+          transform: translate(-50%, -50%) scale3d(56, 56, 1);
+          opacity: 1; }
+        .test .questionsblock .answers .answer__inputGroup input:checked ~ label:after {
+          background-color: #54E0C7;
+          border-color: #54E0C7; }
+      .test .questionsblock .answers .answer__inputGroup input {
+        width: 32px;
+        height: 32px;
+        order: 1;
+        z-index: 2;
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        visibility: hidden; }
+    .test .questionsblock .test__btn {
+      margin-top: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .test .questionsblock .test__btn .btn {
+        background: none;
+        border: 3px solid lightgray;
+        min-width: 40px;
+        font-size: 1rem;
+        text-shadow: none;
+        line-height: 1.2;
+        display: inline-block;
+        padding: 10px 16px;
+        margin: 0 10px 0 0;
+        position: relative;
+        border-radius: 4px;
+        border: 3px solid transparent;
+        background: #fff;
+        border-color: lightgray;
+        color: black;
+        margin-right: 2rem;
+        cursor: pointer;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-decoration: none !important;
+        text-align: center;
+        font-weight: normal !important; }
+        .test .questionsblock .test__btn .btn:hover:enabled {
+          color: white;
+          background: #777777;
+          border-color: #777777; }
+  .test .skippedquestions {
+    border: solid;
+    height: 25rem;
+    border-color: transparent;
+    border-radius: 1rem;
+    padding: 3rem;
+    margin-top: 5rem;
+    width: 10rem; }
+    .test .skippedquestions button {
+      background-color: transparent;
+      border-color: violet;
+      border-radius: 50%;
+      height: 3rem;
+      width: 3rem;
+      margin-bottom: 1rem; }
+
+.fas.fa-long-arrow-alt-right {
+  color: #333333;
+  transform: translateX(-30px);
+  opacity: 0; }
+
+.fas.fa-chevron-left {
+  font-size: 0.7rem;
+  margin-right: 0.4rem; }
+
+.fas.fa-chevron-right {
+  font-size: 0.7rem;
+  margin-left: 0.4rem; }
+
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .result .result__title {
+    font-size: 2.5rem;
+    margin-top: 2rem; }
+  .result .container {
+    border: solid;
+    height: 20rem;
+    margin: 3rem;
+    box-shadow: 2px 10px 10px 10px #dedede;
+    border-color: transparent;
+    border-radius: 1rem;
+    padding: 3rem;
+    width: 25rem;
+    line-height: 4rem; }
+    .result .container .content {
+      font-weight: 500; }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Exam</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="test">
+        <div class="questionsblock">
+            <div class="question">
+                Questions
+            </div>
+
+            <div class="answers">
+                <div class="answer__inputGroup">
+                    <input class="radio__btn" type="radio" id="a" name="answer" value="a">
+                    <label class="answers-1" for="a"></label>
+                </div>
+
+                <div class="answer__inputGroup">
+                    <input class="radio__btn" type="radio" id="b" name="answer" value="b">
+                    <label class="answers-2" for="b"></label>
+                </div>
+
+                <div class="answer__inputGroup">
+                    <input class="radio__btn" type="radio" id="c" name="answer" value="c">
+                    <label class="answers-3" for="c">Answer</label>
+                </div>
+
+                <div class="answer__inputGroup">
+                    <input class="radio__btn" type="radio" id="d" name="answer" value="d">
+                    <label class="answers-4" for="d">Answer</label>
+                </div>
+            </div>
+
+            <div class="test__btn">
+                <button class="btn btn__previous">
+                    <i class="fas fa-chevron-left"></i> Prev
+                </button>
+                <button class="btn btn__next">
+                    Next
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <button class="btn btn__skip">
+                    Skip
+                </button>
+                <button class="btn btn__submit" data-toggle="modal"
+                    data-target="#exampleModalCenter">
+                    Submit
+                </button>
+
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" data-backdrop="true" data-keyboard="false"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Submit Exam</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                You should at least answer one question.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="skippedquestions">
+            <!-- <div class="question-1">first skipped question</div> -->
+        </div>
+    </div>
+</body>
+<script src="js/exam.js"></script>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</html>
